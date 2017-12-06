@@ -12,7 +12,7 @@ public class FutureTest {
 		FutureTask<?>[] task = new FutureTask<?>[100];
 		for(int i=0;i<100;i++){
 			task[i] = new FutureTask<>(new FutureFatory("abcdefj"+i+""));
-		}
+		}d
 		for(int i=0;i<100;i++){
 			executorService.submit(task[i]);
 		}
