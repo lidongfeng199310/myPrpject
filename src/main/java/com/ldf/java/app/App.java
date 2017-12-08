@@ -4,20 +4,10 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
 @EnableAutoConfiguration
 @ImportResource(locations={"classpath:spring-applicationContext.xml"})
 public class App extends SpringBootServletInitializer{
-
-    @RequestMapping("/home")
-    @ResponseBody
-    String home() {
-        return "Hello World!";
-    }
     
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
