@@ -1,6 +1,7 @@
 package com.ldf.java.app.service;
 
-public interface ISpringBootTestService extends IBaseService{
+public interface ISpringBootTestService{
 	
+	public String getList();
 
 }
