@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ldf.java.app.mapper.SpringBootTestMapper">
+
+	<resultMap type="com.ldf.java.app.model.User" id="BaseResultMap">
+		<id column="id" property="id" jdbcType="BIGINT"/> 
+		<id column="name" property="name" jdbcType="VARCHAR"/> 
+		<id column="password" property="password" jdbcType="VARCHAR"/> 
+	</resultMap>
+	
+	<select id="getOne" resultMap="BaseResultMap" parameterType="com.ldf.java.app.model.User">
+		select * from user
+	</select>
+	
+</mapper>

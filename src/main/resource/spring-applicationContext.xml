@@ -11,9 +11,22 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+	<!-- 加载jdbc.properties配置文件 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
 	<!-- 开启容器注册 -->
-	<context:annotation-config/> 
+	<context:annotation-config />
 	<!-- 扫描路径 -->
-	<context:component-scan base-package="com.ldf.java.app"/>
+	<context:component-scan base-package="com.ldf.java.app" />
+
+
+	<import resource="spring-mybatis.xml" />
 
 </beans>   
