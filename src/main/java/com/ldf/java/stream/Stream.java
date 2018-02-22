@@ -15,6 +15,10 @@ public class Stream {
 		list.add(new User("ldf", "12345"));
 		list.add(new User("jly","12345"));
 		
-		Map<String, User> map1 = (Map<String, User>) list.stream().collect(Collectors.toMap(User::getName, c->c, (e1,e2)->e1));
+		list.stream().forEach(ab ->{
+			System.out.println(ab.getName());
+		});
+		
+		//Map<String, User> map1 = (Map<String, User>) list.stream().collect(Collectors.toMap(User::getName, c->c, (e1,e2)->e1));
 	}
 }

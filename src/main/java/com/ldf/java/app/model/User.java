@@ -15,4 +15,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public User(String name, String password) {
+		super();
+		this.name = name;
+		this.password = password;
+	}
+	public User(){
+		
+	}
 }
