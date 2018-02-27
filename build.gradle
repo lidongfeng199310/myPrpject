@@ -28,8 +28,8 @@ dependencyManagement {
 dependencies {
   compile "org.springframework.boot:spring-boot-starter-web"
   compile group: 'cglib', name: 'cglib', version: '3.2.6'
-  compile group: 'org.drools', name: 'drools-compiler', version: '6.5.0.Final'
-  compile group: 'org.kie', name: 'kie-api', version: '6.5.0.Final'
+  compile "org.drools:drools-compiler:5.5.0.Final" 
+  compile "org.drools:drools-core:5.5.0.Final"   
   compile group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.9.RELEASE'
   
   
