@@ -31,6 +31,5 @@ dependencies {
   compile "org.drools:drools-compiler:5.5.0.Final" 
   compile "org.drools:drools-core:5.5.0.Final"   
   compile group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.9.RELEASE'
-  
-  
+compile group: 'xstream', name: 'xstream', version: '1.2.2'  
 }
