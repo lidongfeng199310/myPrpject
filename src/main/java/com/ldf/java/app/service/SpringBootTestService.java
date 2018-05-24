@@ -19,7 +19,7 @@ public class SpringBootTestService  implements ISpringBootTestService{
 		User user = new User();
 		user.setName("ldf");
 		user.setPassword("123456");
-		return mapper.getOne(user).toString();
+		return "aaaa";
 	}
 	
 }
