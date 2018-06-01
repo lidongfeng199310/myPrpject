@@ -12,12 +12,10 @@ public class FutureFatory implements Callable<String>{
 	@Override
 	public String call() throws Exception {
 		char[] c = new char[value.length()];
-		 String v = value;
+		String v = value;
 		for(int i=0;i<v.length();i++){
 			c[i] = v.charAt(i);
-			System.out.print(c[i]);
 		}
-		System.out.println();
 		Thread.sleep(1000);
 		return String.valueOf(c);
 	}

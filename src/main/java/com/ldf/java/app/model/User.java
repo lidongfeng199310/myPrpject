@@ -1,6 +1,7 @@
 package com.ldf.java.app.model;
 
 public class User {
+	private long id;
 	private String name;
 	private String password;
 	public String getName() {
@@ -23,4 +24,11 @@ public class User {
 	public User(){
 		
 	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	
 }

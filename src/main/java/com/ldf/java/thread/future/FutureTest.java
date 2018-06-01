@@ -8,7 +8,7 @@ import java.util.concurrent.FutureTask;
 public class FutureTest {
 	
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
-		ExecutorService executorService = Executors.newFixedThreadPool(100);
+		ExecutorService executorService = Executors.newFixedThreadPool(10);
 		FutureTask<?>[] task = new FutureTask<?>[100];
 		for(int i=0;i<100;i++){
 			task[i] = new FutureTask<>(new FutureFatory("abcdefj"+i+""));
